@@ -60,6 +60,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   position: relative;
+  white-space: nowrap;
+  overflow: auto;
 }
 
 a {
@@ -251,9 +253,6 @@ table {
 .menu-main {
   display: flex;
 }
-.nav-bar {
-  font-size: ;
-}
 .menu-link {
   margin-right: 35px;
   font-size: 12px;
@@ -274,7 +273,7 @@ table {
   width: 80px;
   height: 2px;
   bottom: 0;
-  left: 280px;
+  left: 14.3%;
   transition: 0.8s ease-in-out;
 }
 .button-profile {
@@ -301,7 +300,6 @@ table {
 .head-line {
   margin-top: 35px;
   display: flex;
-  justify-content: space-between;
 }
 .logo {
   font-size: 50px;
@@ -309,40 +307,55 @@ table {
   font-weight: 600;
   letter-spacing: 25px;
   color: #ff8900;
-  line-height: 0.7;
+  line-height: 0.8;
+  margin-right: 125px;
 }
 .number-phone {
   background: #f5f5f5;
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .number-phone > span {
   font-size: 16px;
   font-style: italic;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-weight: 500;
+}
+.number-phone > span:last-child {
+  margin-left: 40px;
+  margin-right: 30px;
 }
 .phone-wrap {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  height: 50px;
 }
 .callback-button {
   background: #ff8900;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.callback-button:hover {
+  background: #d36f00;
 }
 .callback-button > img {
   height: 17px;
-  padding: 0px 12px;
+  padding-right: 5px;
 }
 .callback-button > span {
   color: #ffff;
   text-transform: uppercase;
   font-size: 12px;
-  padding: 0px 12px;
 }
 .cfb-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-left: 95px;
 }
 .cfb-wrapper > div > img {
   height: 34px;
@@ -350,9 +363,255 @@ table {
 .cfb-wrapper > div {
   position: relative;
 }
+.cfb-wrapper > div > p {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.cfb-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .quantity-select {
   position: absolute;
+  top: -25px;
+  left: 35%;
 }
 .quantity-select > span {
+  position: absolute;
+  top: 2px;
+  left: 15px;
   font-size: 11px;
+  color: #ffffff;
 }
+.compare {
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.favorit {
+  border-style: none solid none solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.backet {
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.disp-none {
+  display: none;
+}
+.cust-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.cus-head-menu {
+  display: flex;
+}
+.cus-burger-ico {
+  background: #d36f00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 23px;
+}
+.cus-burger-line1 {
+  width: 10px;
+  height: 2px;
+  margin-bottom: 2px;
+  background: #ffffff;
+}
+.cus-burger-line2 {
+  width: 14px;
+  height: 2px;
+  margin-bottom: 2px;
+  background: #ffffff;
+}
+.cus-burger-line3 {
+  width: 7px;
+  height: 2px;
+  background: #ffffff;
+}
+.cus-burger-text {
+  background: #ff8900;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  width: 265px;
+}
+.cus-burger-text > h3 {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 0.8;
+  text-transform: capitalize;
+  margin-left: 23px;
+  font-weight: 600;
+}
+.cus-items-link {
+  border: solid 1px #f1f1f1;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.cus-items-link:hover {
+  background: #f5f5f5;
+}
+.cus-items-link > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cus-items-link > a > span {
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+.cus-items-link > a > img {
+  padding-right: 34px;
+}
+.cus-search-container {
+  width: 1015px;
+}
+.cus-search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cus-finder {
+  background: #f5f5f5;
+  border: none;
+}
+.cus-search-filter-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.cus-filter-tabs-wrapper {
+  display: flex;
+  background-color: #606a76;
+  height: 75px;
+  position: relative;
+}
+.cus-tabs-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cus-tabs-items {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #a0a6ad;
+}
+.white-text {
+  color: #fff;
+}
+.cus-tabs-items {
+  margin-left: 65px;
+}
+.cus-tabs-items > p {
+  margin-left: 13px;
+}
+.car {
+  width: 40px;
+}
+.truck {
+  width: 46px;
+}
+.well {
+  width: 25px;
+}
+.oil {
+  height: 29px;
+}
+.battery {
+  width: 26px;
+}
+.tab-icon-active path {
+  stroke: #f6c32a;
+}
+.cus-btn-accent {
+  position: absolute;
+  background: #ffc925;
+  width: 220px;
+  height: 2px;
+  bottom: 0;
+  left: 0%;
+  transition: 0.8s ease-in-out;
+}
+
+/* Custom select start*/
+
+.custom-select {
+  position: relative;
+  width: 220px;
+  border-bottom: double #696969;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #ff8500 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected,
+.select-arrow-active:after {
+  border-color: transparent transparent #ff8500 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #9c9c9c;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* selec custom end */

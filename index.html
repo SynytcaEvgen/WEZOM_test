@@ -10,8 +10,7 @@
     />
     <link rel="stylesheet" href="./assets/style/main.css" />
     <link rel="stylesheet" href="./assets/style/media.css" />
-    <script src="./assets/js/validator.js"></script>
-    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/select_engine.js"></script>
     <title>Test_auto_shop</title>
   </head>
   <body>
@@ -42,8 +41,8 @@
           <div class="logo"><p>TEST</p></div>
           <div class="phone-wrap">
             <div class="number-phone">
-              <span>+38098170074</span>
-              <span>+38098170074</span>
+              <span>+380 98 170 00 740</span>
+              <span>+380 98 170 00 740</span>
             </div>
             <button class="callback-button">
               <img src="./assets/image/icon/phone.png" alt="phone" />
@@ -62,10 +61,18 @@
             <div class="favorit">
               <img src="./assets/image/icon/Favorit.png" alt="favorit" />
               <p>избраное</p>
+              <div class="quantity-select">
+                <img src="./assets/image/icon/digits bg.png" alt="select">
+                <span>0</span>
+              </div>
             </div>
             <div class="backet">
               <img src="./assets/image/icon/Backet.png" alt="backet" />
               <p>корзина</p>
+              <div class="quantity-select">
+                <img src="./assets/image/icon/digits bg.png" alt="select">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,12 +81,491 @@
     </div>
     <!--Header end-->
 
-    <!--Content start-->
-    <div class="content-container"></div>
-    <!--Content end-->
+    <!--Customer start-->
+    <div class="cust-container main-wrapper">
+      <div class="cus-menu">
+        <div class="cus-head-menu">
+          <div class="cus-burger-ico">
+            <div class="cus-burger-line1"></div>
+            <div class="cus-burger-line2"></div>
+            <div class="cus-burger-line3"></div>
+          </div>
+          <div class="cus-burger-text">
+            <h3>меню</h3>
+          </div>
+        </div>
+        <div class="cus-menu-items">
+          <ul class="cus-items">
+            <li class="cus-items-link"><a href=""><span>ссылка 1</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 2</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 3</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 4</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 5</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 6</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link"><a href=""><span>ссылка 7</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cus-search-container">
+        <div class="cus-search-wrapper">
+        <form class="form-search" onsubmit="return false">
+         <div class="cus-input-wrap">
+           <input type="search" class="cus-finder" placeholder="Поиск по сайту" >
+           <select name="select" >
+             <option value="value1" selected>Все категории</option>
+             <option value="value2">категория 1</option>
+             <option value="value3">категория 2</option>
+             <option value="value4">категория 3</option>
+           </select>
+           <button class="btn-search">поиск</button>
+         </div>
+        </form>
+        </div>
+        <div class="cus-search-filter-wrapper">
+          <div class="cus-filter-tabs-wrapper">
+            <ul class="cus-tabs-wrapper">
+              <li class="cus-tabs-items white-text">
+                  <svg class="tab-icon-active car" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 34" width="79" height="34">
+                    <defs>
+                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                        <path d="M0 0L79 0L79 34L0 34Z" />
+                      </clipPath>
+                    </defs>
+                    <style>
+                      tspan {
+                        white-space: pre
+                      }
+                  
+                      .shp0 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 4
+                      }
+                  
+                      .shp1 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 2
+                      }
+                  
+                      .shp2 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-linecap: round;
+                        stroke-width: 4
+                      }
+                    </style>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                      <path id="Path 1" class="shp0"
+                        d="M58.49 25.94L24.95 25.94M11.75 25.94C11.75 25.94 1.9 25.65 2 20.33C2.05 17.39 2.05 14.42 2.03 12.35C2.02 10.83 3.25 9.6 4.77 9.6L8.8 9.6C8.8 9.6 21.4 2.11 34.89 2.51C43.18 3.26 44.11 4.01 52.28 9.2C55.2 11.06 62.97 12.87 67.86 13.4C73.86 14.05 78.28 18.6 77.29 24.55C77.26 24.69 77.13 25.81 77.1 25.94L70.7 25.94M5.56 19.61L3.59 19.61L3.59 14.24L6.99 14.24C8.08 14.24 8.96 15.12 8.96 16.21C8.96 18.08 7.43 19.61 5.56 19.61ZM24.33 25.94C24.33 29.29 21.62 32 18.27 32C14.93 32 12.22 29.29 12.22 25.94C12.22 22.6 14.93 19.89 18.27 19.89C21.62 19.89 24.33 22.6 24.33 25.94Z" />
+                      <path id="Path 2" class="shp1"
+                        d="M19.9 25.8C19.9 26.69 19.17 27.42 18.27 27.42C17.38 27.42 16.65 26.69 16.65 25.8C16.65 24.9 17.38 24.17 18.27 24.17C19.17 24.17 19.9 24.9 19.9 25.8Z" />
+                      <path id="Path 3" class="shp0"
+                        d="M69.98 25.94C69.98 29.29 67.27 32 63.93 32C60.58 32 57.87 29.29 57.87 25.94C57.87 22.6 60.58 19.89 63.93 19.89C67.27 19.89 69.98 22.6 69.98 25.94Z" />
+                      <path id="Path 4" class="shp1"
+                        d="M65.55 25.8C65.55 26.69 64.82 27.42 63.93 27.42C63.03 27.42 62.3 26.69 62.3 25.8C62.3 24.9 63.03 24.17 63.93 24.17C64.82 24.17 65.55 24.9 65.55 25.8Z" />
+                      <path id="Path 5" class="shp2"
+                        d="M14.26 6.92C14.26 6.92 16.81 13.14 21.14 13.14L65.53 13.14M19.9 19.03L22.72 4.01M38.88 25.18L38.88 12.42L35.63 3.26" />
+                      <path id="Path 6" class="shp0"
+                        d="M75.52 18.37C75.31 19.39 74.31 20.05 73.29 19.85C72.27 19.64 71.61 18.65 71.82 17.62C72.02 16.6 73.02 15.94 74.04 16.15" />
+                    </g>
+                  </svg>
+                  <p>Ссылка 1</p>
+              </li>
+              <li class="cus-tabs-items">
+                  <svg class="truck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 52" width="82" height="52">
+                    <defs>
+                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                        <path d="M0 0L92 0L92 62L0 62Z" />
+                      </clipPath>
+                    </defs>
+                    <style>
+                      tspan {
+                        white-space: pre
+                      }
+                  
+                      .shp0 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 4
+                      }
+                  
+                      .shp1 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-linecap: round;
+                        stroke-width: 4
+                      }
+                    </style>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                      <path id="Path 1" class="shp0"
+                        d="M20.35 53.04C20.35 56.88 17.23 60 13.39 60C9.54 60 6.42 56.88 6.42 53.04C6.42 49.19 9.54 46.07 13.39 46.07C17.23 46.07 20.35 49.19 20.35 53.04ZM15.6 52.81C15.6 54.03 14.61 55.02 13.39 55.02C12.17 55.02 11.18 54.03 11.18 52.81C11.18 51.59 12.17 50.6 13.39 50.6C14.61 50.6 15.6 51.59 15.6 52.81ZM35.1 53.04C35.1 56.88 31.98 60 28.14 60C24.29 60 21.17 56.88 21.17 53.04C21.17 49.19 24.29 46.07 28.14 46.07C31.98 46.07 35.1 49.19 35.1 53.04ZM30.35 52.81C30.35 54.03 29.36 55.02 28.14 55.02C26.91 55.02 25.92 54.03 25.92 52.81C25.92 51.59 26.91 50.6 28.14 50.6C29.36 50.6 30.35 51.59 30.35 52.81ZM81.31 53.04C81.31 56.88 78.19 60 74.35 60C70.5 60 67.38 56.88 67.38 53.04C67.38 49.19 70.5 46.07 74.35 46.07C78.19 46.07 81.31 49.19 81.31 53.04ZM76.56 52.81C76.56 54.03 75.57 55.02 74.35 55.02C73.12 55.02 72.13 54.03 72.13 52.81C72.13 51.59 73.12 50.6 74.35 50.6C75.57 50.6 76.56 51.59 76.56 52.81ZM67.38 52.34L35.51 52.34M53.66 44.64L46.32 44.64L46.32 27.51L53.66 27.51L53.66 44.64Z" />
+                      <path id="Path 2" class="shp1"
+                        d="M53.66 1.83L53.66 44.64M43.33 12.36L50.07 19.1L50.07 27.31M18.39 44.64L29.69 38.45M2 44.64L61.61 44.64L65.37 42.85C71.13 40.12 77.94 40.78 83.07 44.58L86.4 47.04C87.02 48.28 88.68 48.53 89.67 47.55L89.67 41.16C89.67 39.53 88.35 38.21 86.72 38.21L86.72 33.13L87.07 32.91C88.68 31.93 89.67 30.17 89.67 28.28L89.67 11.87C89.69 8.41 86.89 5.6 83.44 5.6L80.35 5.6L60.05 5.6C56.45 5.6 53.54 8.51 53.54 12.11L53.54 44.64" />
+                      <path id="Path 3" class="shp0"
+                        d="M89.67 22.37L77.68 22.37L74.35 19.98L69.94 19.98L69.94 42.1M68.41 5.6L68.41 19.98M73.2 5.6L73.2 40.68M57.42 30.73L56.79 30.73L56.79 25.89L62.26 25.89C62.26 28.56 60.09 30.73 57.42 30.73ZM56.24 34.66L61.89 34.66M56.24 38.6L61.89 38.6" />
+                      <path id="Path 4" class="shp1"
+                        d="M89.67 26.87L81.31 26.87M89.67 30.3L84.63 30.3M57.96 12.36L67.38 12.36M56.79 16.41L67.38 16.41" />
+                    </g>
+                  </svg>
+                  <p>Ссылка 2</p> 
+              </li>
+              <li class="cus-tabs-items">
+                  <svg class="well" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="49" height="49">
+                    <defs>
+                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                        <path d="M0 0L49 0L49 49L0 49Z" />
+                      </clipPath>
+                    </defs>
+                    <style>
+                      tspan {
+                        white-space: pre
+                      }
+                  
+                      .shp0 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 4
+                      }
+                  
+                      .shp1 {
+                        fill: #5b5f5c
+                      }
+                  
+                      .shp2 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 2
+                      }
+                    </style>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                      <path id="Path 1" class="shp0"
+                        d="M46.5 24.75C46.5 37.04 36.54 47 24.25 47C11.96 47 2 37.04 2 24.75C2 12.46 11.96 2.5 24.25 2.5C36.54 2.5 46.5 12.46 46.5 24.75ZM40.93 24.75C40.93 33.96 33.46 41.43 24.25 41.43C15.04 41.43 7.57 33.96 7.57 24.75C7.57 15.54 15.04 8.07 24.25 8.07C33.46 8.07 40.93 15.54 40.93 24.75ZM30.57 24.75C30.57 28.24 27.74 31.07 24.25 31.07C20.76 31.07 17.93 28.24 17.93 24.75C17.93 21.26 20.76 18.43 24.25 18.43C27.74 18.43 30.57 21.26 30.57 24.75Z" />
+                      <path id="Path 2" class="shp1"
+                        d="M25.54 24.75C25.54 25.46 24.96 26.04 24.25 26.04C23.54 26.04 22.96 25.46 22.96 24.75C22.96 24.04 23.54 23.46 24.25 23.46C24.96 23.46 25.54 24.04 25.54 24.75Z" />
+                      <path id="Path 3" class="shp2"
+                        d="M17.93 26.04L3.95 31.5M30.93 26.04L44.91 31.5M24.06 47L24.25 31.07M10.94 6.7L20.5 19.85M36.99 6.7L27.43 19.85" />
+                    </g>
+                  </svg>
+                  <p>Ссылка 3</p>
+              </li>   
+              <li class="cus-tabs-items">
+                  <svg class="oil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 57" width="44" height="57">
+                    <defs>
+                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                        <path d="M0 0L44 0L44 57L0 57Z" />
+                      </clipPath>
+                    </defs>
+                    <style>
+                      tspan {
+                        white-space: pre
+                      }
+                  
+                      .shp0 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 4
+                      }
+                  
+                      .shp1 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 2
+                      }
+                    </style>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                      <path id="Path 1" class="shp0"
+                        d="M11.22 49.43L11.22 55L41.89 55L41.89 21.28L27 10.39L11.22 10.5L11.22 22.46M25.51 9.85L11.22 9.92L11.22 2.05L25.51 1.98L25.51 9.85Z" />
+                      <path id="Path 2" class="shp1" d="M16.29 1.92L16.29 8.92M20.21 1.98L20.21 8.98" />
+                      <path id="Path 3" class="shp0"
+                        d="M11.59 20.3L3.48 33.22C-0.52 39.6 4.06 47.89 11.59 47.89C19.12 47.89 23.7 39.6 19.7 33.22L11.59 20.3Z" />
+                      <path id="Path 4" class="shp1" d="M17.04 28.98L41.89 28.98M41.89 40.13L21.06 40.13" />
+                    </g>
+                  </svg>
+                  <p>Ссылка 4</p>
+                </li>
+              <li class="cus-tabs-items">
+                  <svg class="battery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 46" width="51" height="46">
+                    <defs>
+                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                        <path d="M0 0L51 0L51 46L0 46Z" />
+                      </clipPath>
+                    </defs>
+                    <style>
+                      tspan {
+                        white-space: pre
+                      }
+                  
+                      .shp0 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 4
+                      }
+                  
+                      .shp1 {
+                        fill: none;
+                        stroke: #5b5f5c;
+                        stroke-width: 2
+                      }
+                    </style>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                      <path id="Path 1" class="shp0"
+                        d="M48.5 44L2 44L2 9.3L48.5 9.3L48.5 44ZM16.75 8.8L5.88 8.8L5.88 1.55L16.75 1.55L16.75 8.8ZM44.75 8.8L33.88 8.8L33.88 1.55L44.75 1.55L44.75 8.8Z" />
+                      <path id="Path 2" class="shp1"
+                        d="M2 17.05L48.5 17.05M8.87 28.55L17.37 28.55M32.87 28.55L41.37 28.55M13.12 24.3L13.12 32.8" />
+                    </g>
+                  </svg>
+                  <p>Ссылка 5</p>
+              </li>
+            </ul>
+            <div class="cus-btn-accent"></div>
+          </div>
+          <div class="cus-filter-content-wrapper">
+            <form class="form-filter" onsubmit="return false">
+              <div class="cus-filet-tabs-wrapper">
+                <span>Tab 1</span>
+                <span>Tab 2</span>
+                <div class="cus-btn-select"></div>
+              </div>
+              <div class="cus-filter-option-wrapper">
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="1">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                </div>
+                
+                <div class="cus-fitel-cost">
+                  <span>Цена</span>
+                  <input type="text" class="min-cost" placeholder="0">
+                  <input type="text" class="max-cost" placeholder="250000">
+                </div>
+              </div>
+              <button type="button" class="reset-filter-btn">
+                <img src="" alt="esc">
+                <span> Очистить фильтр</span>
+              </button>
+              <button type="button" class="submit-filter-btn">
+                <span>применить фильтр</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--Customer end-->
+   
+    <!--Goods card start-->
+    <div class="goods-container main-wrapper">
+      <div class="goods-name-wrapper">
+        <h1>Карточки товаров</h1>
+        <div class="goods-catalog-link-wrapper">
+          <a href="#">Ссылка в каталог</a>
+          <img src="" alt="arrow">
+        </div>
+         
+      </div>
+      <div class="goods-card-wrapper">
+        <div class="goods-card">
+          <div class="doods-card-head">
+            <div class="card-lable"></div>
+            <h5>Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</h5>
+          </div>
+          <div class="card-review-wrapper">
+            <div class="card-reating">
+              <i class="icon-star icon-color"></i>
+              <i class="icon-star icon-color"></i>
+              <i class="icon-star icon-color"></i>
+              <i class="icon-star icon-color"></i>
+              <i class="icon-star icon-color"></i>
+            </div>
+            <div class="card-review-link">
+              <a href="#">Отзывы(<span>10</span>)</a>
+            </div>
+            <div class="good-quantity">
+              <p>В наличии:</p> <span>24 шт.</span>
+            </div>
+          </div>
+          <div class="goods-card-body">
+            <img src="" alt="goods_img">
+            <div class="goods-type-wrapper">
+              <ul class="type-wrap">
+                <li class="type-items"><img src="" alt=""><p>летняя</p></li>
+                <li class="type-items"><img src="" alt=""><p>легковая</p></li>
+                <li class="type-items"><img src="" alt=""><p>новая</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-teg-wrapper">
+            <ul class="card-teg-head">
+              <li class="teg-items"><img src="" alt=""><p>новинка</p></li>
+              <li class="teg-items"><img src="" alt=""><p>хит</p></li>
+              <li class="teg-items"><img src="" alt=""><p>скидка</p></li>
+            </ul>
+          </div>
+          <div class="goods-card-price">
+            <div class="card-price">599 грн.</div>
+            <div class="card-price-promo">1250 грн.</div>
+          </div>
+          <button>
+            <img src="" alt="backet">
+            <span>купить товар</span>
+          </button>
+          <div class="goods-card-cust">
+            <div class="goods-comper">
+              <img src="" alt="comper_img">
+              <span>Сравнить товар</span>
+            </div>
+            <div class="goods-favorit-add">
+              <img src="" alt="favorit_icon">
+              <span>В избраное</span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--Goods card end-->
+
 
     <!--Footer start-->
-    <footer class="footer"></footer>
+    <footer class="footer-wrapper">
+      <div class="footer-wrapper-link main-wrapper">
+        <ul class="wrapper-links">
+          <li class="footer-sub">
+            <div class="sub-head">
+              <h3>Блок 1</h3>
+              <div class="line-accent-1"></div>
+              <div class="line-1"></div>
+            </div>
+            <div class="sub-body">
+              <h4>Будьте в курсе новостей и новинок!</h4>
+              <h3>Подписывайтесь на рассылку</h3>
+              <form class="form-sub" onsubmit="return false">
+                <input type="email" class="sub-emil" placeholder="Укажите свой email для подписки">
+                <input type="submit" class="btn-submit" value="подписаться">
+              </form>
+            </div>
+          </li>
+          <li class="footer-link-1">
+            <div class="link-1-head">
+              <h3>Блок ссылок 1</h3>
+              <div class="line-accent-2"></div>
+              <div class="line-2"></div>
+            </div>
+            <ul class="footer-link">
+              <li class="footer-items-link">Ссылка 1</li>
+              <li class="footer-items-link">Ссылка 2</li>
+              <li class="footer-items-link">Ссылка 3</li>
+              <li class="footer-items-link">Ссылка 4</li>
+            </ul>
+          </li>
+          <li class="footer-link-2">
+            <div class="link-2-head">
+              <h3>Блок ссылок 3</h3>
+              <div class="line-accent-3"></div>
+              <div class="line-3"></div>
+            </div>
+            <ul class="footer-link">
+              <li class="footer-items-link">Ссылка 1</li>
+              <li class="footer-items-link">Ссылка 2</li>
+              <li class="footer-items-link">Ссылка 3</li>
+              <li class="footer-items-link">Ссылка 4</li>
+            </ul>
+          </li>
+          <li class="footer-link-1">
+            <div class="link-1-head">
+              <h3>Блок ссылок 3</h3>
+              <div class="line-accent-2"></div>
+              <div class="line-2"></div>
+            </div>
+            <ul class="footer-link">
+              <li class="footer-items-link">Ссылка 1</li>
+              <li class="footer-items-link">Ссылка 2</li>
+              <li class="footer-items-link">Ссылка 3</li>
+              <li class="footer-items-link">Ссылка 4</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-wrapper-end main-wrapper">
+        <div class="logo-wrpper">
+          <div class="footer-logo">
+            <h1>test</h1>
+          </div>
+          <div class="border-line"></div>
+          <div class="copyrigth-text">
+            <p>&#169; Copyright 2020. Тестовое задание Wezom</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <div class="social-items">
+            <a href="https://www.facebook.com"><svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+              <path d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+            </svg>
+            </a>
+          </div>
+          <div class="social-items">
+            <a href="https://www.facebook.com"><svg class="social-items-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="social-items">
+            <a href="https://www.twitter.com">
+              <svg class="social-items-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.01c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568C480.224,136.96,497.728,118.496,512,97.248z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="social-items">
+            <a href="https://www.youtube.com">
+              <svg class="social-items-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80	c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904	C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728	c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="devop-info">
+          <img src="" alt="wezom_logo">
+          <div class="border-line"></div>
+          <div class="devop-signatur">
+            <p>Разработка тестового</p>
+            <p>Wezom Agency</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--Footer end-->
   </body>
 </html>
