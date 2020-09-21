@@ -12,25 +12,30 @@
     <link rel="stylesheet" href="./assets/style/main.css" />
     <link rel="stylesheet" href="./assets/style/media.css" />
     <script src="./assets/js/select_engine.js"></script>
+    <script src="./assets/js/popUp_engine.js"></script>
     <script src="./assets/js/phone_num_template.js"></script>
+    <script src="./assets/js/validation.js"></script>
+    <script src="./assets/js/reset_btn.js"></script>
+    <script src="./assets/js/add_goods.js"></script>
+    <script src="./assets/js/tabs_engien.js"></script>
     <title>Test_auto_shop</title>
   </head>
   <body>
     <!--PopUp start-->
     <!--Personal-cabinet-PopUp start-->
-    <div class="pop-pers-cab-wrapper flex-center-start none">
+    <div id="pers-cab" class="pop-pers-cab-wrapper flex-center-center none">
       <div class="user-data-wrapper">
         <div class="head-cab">
           <h1>Вход в личный кабинет</h1>
         </div>
-        <form class="form-user">
+        <form class="form-user" onsubmit="return false">
           <div class="input-wrapper">
             <p>Ваш email</p>
-            <input type="mail" placeholder="username@mail.com">
+            <input class="email-cont valid" type="text" placeholder="username@email.com">
           </div>
           <div class="input-wrapper">
             <p>Пароль</p>
-            <input type="password" placeholder="*********">
+            <input class="pass-cont valid" type="password" placeholder="*********">
           </div>
           <div class="input-checbox">
             <input type="checkbox">
@@ -71,7 +76,7 @@
           </li>
         </ul>
       </div>
-      <div class="esc-icon-pop">
+      <div id="esc-cab" class="esc-icon-pop flex-center-center">
         <div class="esc-icon-1"></div>
         <div class="esc-icon-2"></div>
       </div>
@@ -79,14 +84,14 @@
     
     <!--Personal-cabinet-PopUp end-->
     <!--Callback-PopUp start-->
-    <div class="callback-pop-wrapper none">
+    <div id="wrap-callback" class="callback-pop-wrapper none">
       <div class="head-cab">
         <h1>Перезвоните мне</h1>
       </div>
-      <form class="form-callback">
+      <form class="form-callback" onsubmit="return false">
         <div class="input-wrapper">
           <p>Номер телефона</p>
-          <input type="tel" class="tel-ph" placeholder="+38(0__)__-__-___">
+          <input type="tel" class="tel-ph valid" placeholder="+38(0__)__-__-___">
         </div>
         <div class="flex-center-center">
           <button type="submit" class="callback-btn">
@@ -94,22 +99,22 @@
           </button>
         </div>
       </form>
-      <div class="esc-icon-pop-call">
+      <div id="esc-callback" class="esc-icon-pop-call flex-center-center">
         <div class="esc-icon-1"></div>
         <div class="esc-icon-2"></div>
       </div>
     </div> 
     <!--Callback-PopUp end-->
     <!--Subscribe-PopUp start-->
-    <div class="subs-done-wrapper flex-center-center none">
+    <div id="wrapper-sub" class="subs-done-wrapper flex-center-center none">
       <div class="subs-done-pop flex-center-center">
-        <p>Подписка оформеленна</p>
-        <p>Спасибо!</p>
+        <p>Поздравляем!</p>
+        <p>Вы успешно подписаны на рассылку</p>
       </div>
       <div class="done-icon">
         <i class="far fa-check-circle"></i>
       </div>
-      <div class="esc-icon-pop-sub">
+      <div id="esc-sub" class="esc-icon-pop-sub flex-center-center">
         <div class="esc-icon-1"></div>
         <div class="esc-icon-2"></div>
       </div>
@@ -134,49 +139,51 @@
                 <li class="menu-link"><a href="#">ссылка 3</a></li>
               </ul>
             </nav>
-            <button class="button-profile">
+            <button id="btn-cab" class="button-profile">
                 <img src="./assets/image/icon/profile.png" alt="" />
                 <p>вход</p>
               </a>
             </button>
+            <div class="btn-accent"></div>
           </div>
-          <div class="btn-accent"></div>
         </div>
         <div class="head-line main-wrapper">
-          <div class="logo accent-color"><p>test</p></div>
-          <div class="phone-wrap">
+          <div class="logo-phone">
+            <div class="logo accent-color"><p>test</p></div>
+            <div class="phone-wrap">
             <div class="number-phone">
               <span>+380 98 170 00 740</span>
               <span>+380 98 170 00 740</span>
             </div>
-            <button class="callback-button">
+            <button id="btn-callback" class="callback-button">
               <img src="./assets/image/icon/phone.png" alt="phone" />
               <span>перезвонить мне</span>
             </button>
+            </div>
           </div>
           <div class="cfb-wrapper">
             <div class="compare">
               <img src="./assets/image/icon/Compare.png" alt="comper" />
               <p>cравнение</p>
-              <div class="quantity-select">
+              <div id="compare" class="quantity-select none">
                 <img src="./assets/image/icon/digits bg.png" alt="select">
-                <span>0</span>
+                <span id="compare-numb">0</span>
               </div>
             </div>
             <div class="favorit">
               <img src="./assets/image/icon/Favorit.png" alt="favorit" />
               <p>избраное</p>
-              <div class="quantity-select">
+              <div id="favorit" class="quantity-select none">
                 <img src="./assets/image/icon/digits bg.png" alt="select">
-                <span>0</span>
+                <span id="favorit-numb">0</span>
               </div>
             </div>
             <div class="backet">
               <img src="./assets/image/icon/Backet.png" alt="backet" />
               <p>корзина</p>
-              <div class="quantity-select">
+              <div id="backet" class="quantity-select none">
                 <img src="./assets/image/icon/digits bg.png" alt="select">
-                <span>0</span>
+                <span id="backet-numb">0</span>
               </div>
             </div>
           </div>
@@ -215,8 +222,9 @@
         <div class="cus-search-wrapper">
         <form class="form-search" onsubmit="return false">
          <div class="cus-input-wrap">
-           <input type="search" class="cus-finder" placeholder="Поиск по сайту">
-           <div class="cus-cat-wrapper">
+           <input type="search" class="cus-finder valid" placeholder="Поиск по сайту">
+           <div class="cus-cat-wrapper custom-select-cat">
+             <div class="cus-border-line"></div>
              <select name="select">
                 <option value="1">Все категории</option>
                 <option value="2">категория 1</option>
@@ -225,15 +233,15 @@
              </select>
             </div>
          </div>
-         <button class="btn-search">поиск</button>
+         <button type="submit" class="btn-search">поиск</button>
          
         </form>
         </div>
         <div class="cus-search-filter-wrapper">
           <div class="cus-filter-tabs-wrapper">
             <ul class="cus-tabs-wrapper">
-              <li class="cus-tabs-items white-text">
-                  <svg class="tab-icon-active car" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 34" width="40" height="17">
+              <li id="iitab-1" class="cus-tabs-items white-text">
+                  <svg id="itab-1" class="tab-icon-active svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 34" width="40" height="17">
                     <defs>
                       <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                         <path d="M0 0L79 0L79 34L0 34Z" />
@@ -280,8 +288,8 @@
                   </svg>
                   <p>Ссылка 1</p>
               </li>
-              <li class="cus-tabs-items">
-                  <svg class="truck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 62" width="46" height="32">
+              <li id="iitab-2" class="cus-tabs-items">
+                  <svg id="itab-2" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 62" width="46" height="32">
                     <defs>
                       <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                         <path d="M0 0L92 0L92 62L0 62Z" />
@@ -318,8 +326,8 @@
                   </svg>
                   <p>Ссылка 2</p> 
               </li>
-              <li class="cus-tabs-items">
-                  <svg class="well" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="25" height="25">
+              <li id="iitab-3" class="cus-tabs-items">
+                  <svg id="itab-3"class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="25" height="25">
                     <defs>
                       <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                         <path d="M0 0L49 0L49 49L0 49Z" />
@@ -357,8 +365,8 @@
                   </svg>
                   <p>Ссылка 3</p>
               </li>   
-              <li class="cus-tabs-items">
-                  <svg class="oil" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 57" width="22" height="29">
+              <li id="iitab-4" class="cus-tabs-items">
+                  <svg id="itab-4" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 57" width="22" height="29">
                     <defs>
                       <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                         <path d="M0 0L44 0L44 57L0 57Z" />
@@ -392,8 +400,8 @@
                   </svg>
                   <p>Ссылка 4</p>
                 </li>
-              <li class="cus-tabs-items">
-                  <svg class="battery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 46" width="26" height="24">
+              <li id="iitab-5" class="cus-tabs-items">
+                  <svg id="itab-5" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 46" width="26" height="24">
                     <defs>
                       <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
                         <path d="M0 0L51 0L51 46L0 46Z" />
@@ -431,11 +439,13 @@
           <div class="cus-filter-content-wrapper">
             <form class="form-filter" onsubmit="return false">
               <div class="cus-filet-tabs-wrapper">
-                <span>Tab 1</span>
-                <span class="white-text">Tab 2</span>
+                <span id="_tab-1" class="white-text js-anchor">Tab 1</span>
+                <span id="_tab-2" class="js-anchor">Tab 2</span>
                 <div class="cus-btn-select"></div>
               </div>
-              <div class="cus-filter-option-wrapper">
+              <!--filter select-1 start-->
+              <div id="tab-1" class="tab-content active-tab-content">
+                <div class="cus-filter-option-wrapper">
                 <div class="custom-select">
                   <select name="select-fil-1">
                     <option value="0">Select</option>
@@ -530,15 +540,101 @@
                 <div class="cus-fitel-cost">
                   <span>Цена</span>
                   <div class="wrap-cost">
-                    <input type="number" min="1" max="24999" class="min-cost" placeholder="0">
+                    <input type="number" class="min-cost valid" placeholder="0">
                     <div class="cus-white-line1"></div>
                   </div>
                   <div class="wrap-cost">
-                    <input type="number" min="2" max="25000" class="max-cost" placeholder="250000">
+                    <input type="number" class="max-cost valid" placeholder="250000">
                     <div class="cus-white-line1"></div>
                   </div>
                 </div>
+                </div>
               </div>
+              <!--filter select-1 end-->
+
+              <!--filter select-2 start-->
+              <div id="tab-2" class="tab-content">
+                <div class="cus-filter-option-wrapper none">
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="0">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                  <div class="cus-white-line"></div>
+                </div>
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="0">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                  <div class="cus-white-line"></div>
+                </div>
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="0">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                  <div class="cus-white-line"></div>
+                </div>
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="0">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                  <div class="cus-white-line"></div>
+                </div>
+                <div class="custom-select">
+                  <select name="select-fil-1">
+                    <option value="0">Select</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option>
+                    <option value="6">Select 6</option>
+                    <option value="7">Select 7</option>
+                  </select>
+                  <div class="cus-white-line"></div>
+                </div>
+                <div class="cus-fitel-cost">
+                  <span>Цена</span>
+                  <div class="wrap-cost">
+                    <input type="number" class="min-cost valid" placeholder="0">
+                    <div class="cus-white-line1"></div>
+                  </div>
+                  <div class="wrap-cost">
+                    <input type="number" class="max-cost valid" placeholder="250000">
+                    <div class="cus-white-line1"></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <!--filter select-2 end-->
+
               <div class="cus-btn-wrapper">
                 <button type="reset" class="reset-filter-btn">
                   <div class="esc-icon">
@@ -547,7 +643,7 @@
                   </div>
                   <span>Очистить фильтр</span>
                 </button>
-                <button type="button" class="submit-filter-btn">
+                <button type="submit" class="submit-filter-btn">
                   <span>применить фильтр</span>
                 </button>
               </div>
@@ -1024,8 +1120,8 @@
               <h4>Будьте в курсе новостей и новинок!</h4>
               <h3>Подписывайтесь на рассылку</h3>
               <form class="form-sub" onsubmit="return false">
-                <input type="email" class="sub-emil" placeholder="Укажите свой email для подписки">
-                <input type="submit" class="btn-submit" value="подписаться">
+                <input type="text" class="sub-emil valid" placeholder="Укажите свой email для подписки">
+                <input id="btn-sub" type="submit" class="btn-submit" value="подписаться">
               </form>
             </div>
           </li>
