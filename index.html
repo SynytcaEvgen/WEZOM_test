@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/libs.css">
+    <link rel="stylesheet" href="./assets/style/libs.css" />
     <link
       rel="shortcut icon"
       href="./assets/Image/icon/favicon.png"
@@ -31,14 +31,22 @@
         <form class="form-user" onsubmit="return false">
           <div class="input-wrapper">
             <p>Ваш email</p>
-            <input class="email-cont valid" type="text" placeholder="username@email.com">
+            <input
+              class="email-cont valid"
+              type="text"
+              placeholder="username@email.com"
+            />
           </div>
           <div class="input-wrapper">
             <p>Пароль</p>
-            <input class="pass-cont valid" type="password" placeholder="*********">
+            <input
+              class="pass-cont valid"
+              type="password"
+              placeholder="*********"
+            />
           </div>
           <div class="input-checbox">
-            <input type="checkbox">
+            <input type="checkbox" />
             <span>Запомнить меня</span>
           </div>
           <div class="emerg-link">
@@ -46,7 +54,7 @@
             <a href="#">Регистрация</a>
           </div>
           <button type="submit" class="cab-btn">
-            <p>Войти в личный кабинет</p>
+            <span>Войти в личный кабинет</span>
           </button>
         </form>
       </div>
@@ -61,7 +69,7 @@
               <i class="fab fa-facebook-f"></i>
               <p>Facebook</p>
             </a>
-        </li>
+          </li>
           <li class="enter-items back-twit flex-center-center">
             <a href="#" class="flex-center-center">
               <i class="fab fa-twitter"></i>
@@ -81,7 +89,7 @@
         <div class="esc-icon-2"></div>
       </div>
     </div>
-    
+
     <!--Personal-cabinet-PopUp end-->
     <!--Callback-PopUp start-->
     <div id="wrap-callback" class="callback-pop-wrapper none">
@@ -91,11 +99,15 @@
       <form class="form-callback" onsubmit="return false">
         <div class="input-wrapper">
           <p>Номер телефона</p>
-          <input type="tel" class="tel-ph valid" placeholder="+38(0__)__-__-___">
+          <input
+            type="tel"
+            class="tel-ph valid"
+            placeholder="+38(0__)__-__-___"
+          />
         </div>
         <div class="flex-center-center">
           <button type="submit" class="callback-btn">
-            <p>Перезвоните мне</p>
+            <span>Перезвоните мне</span>
           </button>
         </div>
       </form>
@@ -103,7 +115,7 @@
         <div class="esc-icon-1"></div>
         <div class="esc-icon-2"></div>
       </div>
-    </div> 
+    </div>
     <!--Callback-PopUp end-->
     <!--Subscribe-PopUp start-->
     <div id="wrapper-sub" class="subs-done-wrapper flex-center-center none">
@@ -119,7 +131,7 @@
         <div class="esc-icon-2"></div>
       </div>
     </div>
-    
+
     <!--Subscribe-PopUp end-->
 
     <!--PopUp end-->
@@ -140,9 +152,8 @@
               </ul>
             </nav>
             <button id="btn-cab" class="button-profile">
-                <img src="./assets/image/icon/profile.png" alt="" />
-                <p>вход</p>
-              </a>
+              <img src="./assets/image/icon/profile.png" alt="" />
+              <span>вход</span>
             </button>
             <div class="btn-accent"></div>
           </div>
@@ -151,14 +162,14 @@
           <div class="logo-phone">
             <div class="logo accent-color"><p>test</p></div>
             <div class="phone-wrap">
-            <div class="number-phone">
-              <span>+380 98 170 00 740</span>
-              <span>+380 98 170 00 740</span>
-            </div>
-            <button id="btn-callback" class="callback-button">
-              <img src="./assets/image/icon/phone.png" alt="phone" />
-              <span>перезвонить мне</span>
-            </button>
+              <div class="number-phone">
+                <span>+380 98 170 00 740</span>
+                <span>+380 98 170 00 740</span>
+              </div>
+              <button id="btn-callback" class="callback-button">
+                <img src="./assets/image/icon/phone.png" alt="phone" />
+                <span>перезвонить мне</span>
+              </button>
             </div>
           </div>
           <div class="cfb-wrapper">
@@ -166,7 +177,7 @@
               <img src="./assets/image/icon/Compare.png" alt="comper" />
               <p>cравнение</p>
               <div id="compare" class="quantity-select none">
-                <img src="./assets/image/icon/digits bg.png" alt="select">
+                <img src="./assets/image/icon/digits_bg.png" alt="select" />
                 <span id="compare-numb">0</span>
               </div>
             </div>
@@ -174,7 +185,7 @@
               <img src="./assets/image/icon/Favorit.png" alt="favorit" />
               <p>избраное</p>
               <div id="favorit" class="quantity-select none">
-                <img src="./assets/image/icon/digits bg.png" alt="select">
+                <img src="./assets/image/icon/digits_bg.png" alt="select" />
                 <span id="favorit-numb">0</span>
               </div>
             </div>
@@ -182,7 +193,7 @@
               <img src="./assets/image/icon/Backet.png" alt="backet" />
               <p>корзина</p>
               <div id="backet" class="quantity-select none">
-                <img src="./assets/image/icon/digits bg.png" alt="select">
+                <img src="./assets/image/icon/digits_bg.png" alt="select" />
                 <span id="backet-numb">0</span>
               </div>
             </div>
@@ -208,230 +219,344 @@
         </div>
         <div class="cus-menu-items">
           <ul class="cus-items">
-            <li class="cus-items-link"><a href=""><span>ссылка 1</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 2</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 3</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 4</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 5</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 6</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
-            <li class="cus-items-link"><a href=""><span>ссылка 7</span><img src="./assets/image/icon/Arrow.png" alt=""></a></li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 1</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 2</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 3</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 4</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 5</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 6</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
+            <li class="cus-items-link">
+              <a href=""
+                ><span>ссылка 7</span
+                ><img src="./assets/image/icon/Arrow.png" alt=""
+              /></a>
+            </li>
           </ul>
         </div>
       </div>
       <div class="cus-search-container">
         <div class="cus-search-wrapper">
-        <form class="form-search" onsubmit="return false">
-         <div class="cus-input-wrap">
-           <input type="search" class="cus-finder valid" placeholder="Поиск по сайту">
-           <div class="cus-cat-wrapper custom-select-cat">
-             <div class="cus-border-line"></div>
-             <select name="select">
-                <option value="1">Все категории</option>
-                <option value="2">категория 1</option>
-                <option value="3">категория 2</option>
-                <option value="4">категория 3</option>
-             </select>
+          <form class="form-search" onsubmit="return false">
+            <div class="cus-input-wrap">
+              <input
+                type="search"
+                class="cus-finder valid"
+                placeholder="Поиск по сайту"
+              />
+              <div class="cus-cat-wrapper custom-select-cat">
+                <div class="cus-border-line"></div>
+                <select name="select">
+                  <option value="1">Все категории</option>
+                  <option value="2">категория 1</option>
+                  <option value="3">категория 2</option>
+                  <option value="4">категория 3</option>
+                </select>
+              </div>
             </div>
-         </div>
-         <button type="submit" class="btn-search">поиск</button>
-         
-        </form>
+            <button type="submit" class="btn-search">поиск</button>
+          </form>
         </div>
         <div class="cus-search-filter-wrapper">
           <div class="cus-filter-tabs-wrapper">
             <ul class="cus-tabs-wrapper">
               <li id="iitab-1" class="cus-tabs-items white-text">
-                  <svg id="itab-1" class="tab-icon-active svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 34" width="40" height="17">
-                    <defs>
-                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                        <path d="M0 0L79 0L79 34L0 34Z" />
-                      </clipPath>
-                    </defs>
-                    <style>
-                      tspan {
-                        white-space: pre
-                      }
-                  
-                      .shp01 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 4
-                      }
-                  
-                      .shp02 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 2
-                      }
-                  
-                      .shp03 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-linecap: round;
-                        stroke-width: 4
-                      }
-                    </style>
-                    <g>
-                      <path id="Path 1" class="shp01"
-                        d="M58.49 25.94L24.95 25.94M11.75 25.94C11.75 25.94 1.9 25.65 2 20.33C2.05 17.39 2.05 14.42 2.03 12.35C2.02 10.83 3.25 9.6 4.77 9.6L8.8 9.6C8.8 9.6 21.4 2.11 34.89 2.51C43.18 3.26 44.11 4.01 52.28 9.2C55.2 11.06 62.97 12.87 67.86 13.4C73.86 14.05 78.28 18.6 77.29 24.55C77.26 24.69 77.13 25.81 77.1 25.94L70.7 25.94M5.56 19.61L3.59 19.61L3.59 14.24L6.99 14.24C8.08 14.24 8.96 15.12 8.96 16.21C8.96 18.08 7.43 19.61 5.56 19.61ZM24.33 25.94C24.33 29.29 21.62 32 18.27 32C14.93 32 12.22 29.29 12.22 25.94C12.22 22.6 14.93 19.89 18.27 19.89C21.62 19.89 24.33 22.6 24.33 25.94Z" />
-                      <path id="Path 2" class="shp02"
-                        d="M19.9 25.8C19.9 26.69 19.17 27.42 18.27 27.42C17.38 27.42 16.65 26.69 16.65 25.8C16.65 24.9 17.38 24.17 18.27 24.17C19.17 24.17 19.9 24.9 19.9 25.8Z" />
-                      <path id="Path 3" class="shp01"
-                        d="M69.98 25.94C69.98 29.29 67.27 32 63.93 32C60.58 32 57.87 29.29 57.87 25.94C57.87 22.6 60.58 19.89 63.93 19.89C67.27 19.89 69.98 22.6 69.98 25.94Z" />
-                      <path id="Path 4" class="shp02"
-                        d="M65.55 25.8C65.55 26.69 64.82 27.42 63.93 27.42C63.03 27.42 62.3 26.69 62.3 25.8C62.3 24.9 63.03 24.17 63.93 24.17C64.82 24.17 65.55 24.9 65.55 25.8Z" />
-                      <path id="Path 5" class="shp03"
-                        d="M14.26 6.92C14.26 6.92 16.81 13.14 21.14 13.14L65.53 13.14M19.9 19.03L22.72 4.01M38.88 25.18L38.88 12.42L35.63 3.26" />
-                      <path id="Path 6" class="shp01"
-                        d="M75.52 18.37C75.31 19.39 74.31 20.05 73.29 19.85C72.27 19.64 71.61 18.65 71.82 17.62C72.02 16.6 73.02 15.94 74.04 16.15" />
-                    </g>
-                  </svg>
-                  <p>Ссылка 1</p>
+                <svg
+                  id="itab-1"
+                  class="tab-icon-active svg-img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 79 34"
+                  width="40"
+                  height="17"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L79 0L79 34L0 34Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .shp01 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 4;
+                    }
+
+                    .shp02 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 2;
+                    }
+
+                    .shp03 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="shp01"
+                      d="M58.49 25.94L24.95 25.94M11.75 25.94C11.75 25.94 1.9 25.65 2 20.33C2.05 17.39 2.05 14.42 2.03 12.35C2.02 10.83 3.25 9.6 4.77 9.6L8.8 9.6C8.8 9.6 21.4 2.11 34.89 2.51C43.18 3.26 44.11 4.01 52.28 9.2C55.2 11.06 62.97 12.87 67.86 13.4C73.86 14.05 78.28 18.6 77.29 24.55C77.26 24.69 77.13 25.81 77.1 25.94L70.7 25.94M5.56 19.61L3.59 19.61L3.59 14.24L6.99 14.24C8.08 14.24 8.96 15.12 8.96 16.21C8.96 18.08 7.43 19.61 5.56 19.61ZM24.33 25.94C24.33 29.29 21.62 32 18.27 32C14.93 32 12.22 29.29 12.22 25.94C12.22 22.6 14.93 19.89 18.27 19.89C21.62 19.89 24.33 22.6 24.33 25.94Z"
+                    />
+                    <path
+                      class="shp02"
+                      d="M19.9 25.8C19.9 26.69 19.17 27.42 18.27 27.42C17.38 27.42 16.65 26.69 16.65 25.8C16.65 24.9 17.38 24.17 18.27 24.17C19.17 24.17 19.9 24.9 19.9 25.8Z"
+                    />
+                    <path
+                      class="shp01"
+                      d="M69.98 25.94C69.98 29.29 67.27 32 63.93 32C60.58 32 57.87 29.29 57.87 25.94C57.87 22.6 60.58 19.89 63.93 19.89C67.27 19.89 69.98 22.6 69.98 25.94Z"
+                    />
+                    <path
+                      class="shp02"
+                      d="M65.55 25.8C65.55 26.69 64.82 27.42 63.93 27.42C63.03 27.42 62.3 26.69 62.3 25.8C62.3 24.9 63.03 24.17 63.93 24.17C64.82 24.17 65.55 24.9 65.55 25.8Z"
+                    />
+                    <path
+                      class="shp03"
+                      d="M14.26 6.92C14.26 6.92 16.81 13.14 21.14 13.14L65.53 13.14M19.9 19.03L22.72 4.01M38.88 25.18L38.88 12.42L35.63 3.26"
+                    />
+                    <path
+                      class="shp01"
+                      d="M75.52 18.37C75.31 19.39 74.31 20.05 73.29 19.85C72.27 19.64 71.61 18.65 71.82 17.62C72.02 16.6 73.02 15.94 74.04 16.15"
+                    />
+                  </g>
+                </svg>
+                <p>Ссылка 1</p>
               </li>
               <li id="iitab-2" class="cus-tabs-items">
-                  <svg id="itab-2" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 62" width="46" height="32">
-                    <defs>
-                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                        <path d="M0 0L92 0L92 62L0 62Z" />
-                      </clipPath>
-                    </defs>
-                    <style>
-                      tspan {
-                        white-space: pre
-                      }
-                  
-                      .shp11 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 4
-                      }
-                  
-                      .shp22 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-linecap: round;
-                        stroke-width: 4
-                      }
-                    </style>
-                    <g>
-                      <path class="shp11"
-                        d="M20.35 53.04C20.35 56.88 17.23 60 13.39 60C9.54 60 6.42 56.88 6.42 53.04C6.42 49.19 9.54 46.07 13.39 46.07C17.23 46.07 20.35 49.19 20.35 53.04ZM15.6 52.81C15.6 54.03 14.61 55.02 13.39 55.02C12.17 55.02 11.18 54.03 11.18 52.81C11.18 51.59 12.17 50.6 13.39 50.6C14.61 50.6 15.6 51.59 15.6 52.81ZM35.1 53.04C35.1 56.88 31.98 60 28.14 60C24.29 60 21.17 56.88 21.17 53.04C21.17 49.19 24.29 46.07 28.14 46.07C31.98 46.07 35.1 49.19 35.1 53.04ZM30.35 52.81C30.35 54.03 29.36 55.02 28.14 55.02C26.91 55.02 25.92 54.03 25.92 52.81C25.92 51.59 26.91 50.6 28.14 50.6C29.36 50.6 30.35 51.59 30.35 52.81ZM81.31 53.04C81.31 56.88 78.19 60 74.35 60C70.5 60 67.38 56.88 67.38 53.04C67.38 49.19 70.5 46.07 74.35 46.07C78.19 46.07 81.31 49.19 81.31 53.04ZM76.56 52.81C76.56 54.03 75.57 55.02 74.35 55.02C73.12 55.02 72.13 54.03 72.13 52.81C72.13 51.59 73.12 50.6 74.35 50.6C75.57 50.6 76.56 51.59 76.56 52.81ZM67.38 52.34L35.51 52.34M53.66 44.64L46.32 44.64L46.32 27.51L53.66 27.51L53.66 44.64Z" />
-                      <path class="shp22"
-                        d="M53.66 1.83L53.66 44.64M43.33 12.36L50.07 19.1L50.07 27.31M18.39 44.64L29.69 38.45M2 44.64L61.61 44.64L65.37 42.85C71.13 40.12 77.94 40.78 83.07 44.58L86.4 47.04C87.02 48.28 88.68 48.53 89.67 47.55L89.67 41.16C89.67 39.53 88.35 38.21 86.72 38.21L86.72 33.13L87.07 32.91C88.68 31.93 89.67 30.17 89.67 28.28L89.67 11.87C89.69 8.41 86.89 5.6 83.44 5.6L80.35 5.6L60.05 5.6C56.45 5.6 53.54 8.51 53.54 12.11L53.54 44.64" />
-                      <path class="shp11"
-                        d="M89.67 22.37L77.68 22.37L74.35 19.98L69.94 19.98L69.94 42.1M68.41 5.6L68.41 19.98M73.2 5.6L73.2 40.68M57.42 30.73L56.79 30.73L56.79 25.89L62.26 25.89C62.26 28.56 60.09 30.73 57.42 30.73ZM56.24 34.66L61.89 34.66M56.24 38.6L61.89 38.6" />
-                      <path class="shp22"
-                        d="M89.67 26.87L81.31 26.87M89.67 30.3L84.63 30.3M57.96 12.36L67.38 12.36M56.79 16.41L67.38 16.41" />
-                    </g>
-                  </svg>
-                  <p>Ссылка 2</p> 
+                <svg
+                  id="itab-2"
+                  class="svg-img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 92 62"
+                  width="46"
+                  height="32"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L92 0L92 62L0 62Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .shp11 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 4;
+                    }
+
+                    .shp22 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-linecap: round;
+                      stroke-width: 4;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="shp11"
+                      d="M20.35 53.04C20.35 56.88 17.23 60 13.39 60C9.54 60 6.42 56.88 6.42 53.04C6.42 49.19 9.54 46.07 13.39 46.07C17.23 46.07 20.35 49.19 20.35 53.04ZM15.6 52.81C15.6 54.03 14.61 55.02 13.39 55.02C12.17 55.02 11.18 54.03 11.18 52.81C11.18 51.59 12.17 50.6 13.39 50.6C14.61 50.6 15.6 51.59 15.6 52.81ZM35.1 53.04C35.1 56.88 31.98 60 28.14 60C24.29 60 21.17 56.88 21.17 53.04C21.17 49.19 24.29 46.07 28.14 46.07C31.98 46.07 35.1 49.19 35.1 53.04ZM30.35 52.81C30.35 54.03 29.36 55.02 28.14 55.02C26.91 55.02 25.92 54.03 25.92 52.81C25.92 51.59 26.91 50.6 28.14 50.6C29.36 50.6 30.35 51.59 30.35 52.81ZM81.31 53.04C81.31 56.88 78.19 60 74.35 60C70.5 60 67.38 56.88 67.38 53.04C67.38 49.19 70.5 46.07 74.35 46.07C78.19 46.07 81.31 49.19 81.31 53.04ZM76.56 52.81C76.56 54.03 75.57 55.02 74.35 55.02C73.12 55.02 72.13 54.03 72.13 52.81C72.13 51.59 73.12 50.6 74.35 50.6C75.57 50.6 76.56 51.59 76.56 52.81ZM67.38 52.34L35.51 52.34M53.66 44.64L46.32 44.64L46.32 27.51L53.66 27.51L53.66 44.64Z"
+                    />
+                    <path
+                      class="shp22"
+                      d="M53.66 1.83L53.66 44.64M43.33 12.36L50.07 19.1L50.07 27.31M18.39 44.64L29.69 38.45M2 44.64L61.61 44.64L65.37 42.85C71.13 40.12 77.94 40.78 83.07 44.58L86.4 47.04C87.02 48.28 88.68 48.53 89.67 47.55L89.67 41.16C89.67 39.53 88.35 38.21 86.72 38.21L86.72 33.13L87.07 32.91C88.68 31.93 89.67 30.17 89.67 28.28L89.67 11.87C89.69 8.41 86.89 5.6 83.44 5.6L80.35 5.6L60.05 5.6C56.45 5.6 53.54 8.51 53.54 12.11L53.54 44.64"
+                    />
+                    <path
+                      class="shp11"
+                      d="M89.67 22.37L77.68 22.37L74.35 19.98L69.94 19.98L69.94 42.1M68.41 5.6L68.41 19.98M73.2 5.6L73.2 40.68M57.42 30.73L56.79 30.73L56.79 25.89L62.26 25.89C62.26 28.56 60.09 30.73 57.42 30.73ZM56.24 34.66L61.89 34.66M56.24 38.6L61.89 38.6"
+                    />
+                    <path
+                      class="shp22"
+                      d="M89.67 26.87L81.31 26.87M89.67 30.3L84.63 30.3M57.96 12.36L67.38 12.36M56.79 16.41L67.38 16.41"
+                    />
+                  </g>
+                </svg>
+                <p>Ссылка 2</p>
               </li>
               <li id="iitab-3" class="cus-tabs-items">
-                  <svg id="itab-3"class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" width="25" height="25">
-                    <defs>
-                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                        <path d="M0 0L49 0L49 49L0 49Z" />
-                      </clipPath>
-                    </defs>
-                    <style>
-                      tspan {
-                        white-space: pre
-                      }
-                  
-                      .shp111 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 4
-                      }
-                  
-                      .shp222 {
-                        fill: #a0a6ad
-                      }
-                  
-                      .shp333 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 2
-                      }
-                    </style>
-                    <g>
-                      <path class="shp111"
-                        d="M46.5 24.75C46.5 37.04 36.54 47 24.25 47C11.96 47 2 37.04 2 24.75C2 12.46 11.96 2.5 24.25 2.5C36.54 2.5 46.5 12.46 46.5 24.75ZM40.93 24.75C40.93 33.96 33.46 41.43 24.25 41.43C15.04 41.43 7.57 33.96 7.57 24.75C7.57 15.54 15.04 8.07 24.25 8.07C33.46 8.07 40.93 15.54 40.93 24.75ZM30.57 24.75C30.57 28.24 27.74 31.07 24.25 31.07C20.76 31.07 17.93 28.24 17.93 24.75C17.93 21.26 20.76 18.43 24.25 18.43C27.74 18.43 30.57 21.26 30.57 24.75Z" />
-                      <path class="shp222"
-                        d="M25.54 24.75C25.54 25.46 24.96 26.04 24.25 26.04C23.54 26.04 22.96 25.46 22.96 24.75C22.96 24.04 23.54 23.46 24.25 23.46C24.96 23.46 25.54 24.04 25.54 24.75Z" />
-                      <path class="shp333"
-                        d="M17.93 26.04L3.95 31.5M30.93 26.04L44.91 31.5M24.06 47L24.25 31.07M10.94 6.7L20.5 19.85M36.99 6.7L27.43 19.85" />
-                    </g>
-                  </svg>
-                  <p>Ссылка 3</p>
-              </li>   
+                <svg
+                  id="itab-3"
+                  class="svg-img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 49 49"
+                  width="25"
+                  height="25"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L49 0L49 49L0 49Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .shp111 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 4;
+                    }
+
+                    .shp222 {
+                      fill: #a0a6ad;
+                    }
+
+                    .shp333 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 2;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="shp111"
+                      d="M46.5 24.75C46.5 37.04 36.54 47 24.25 47C11.96 47 2 37.04 2 24.75C2 12.46 11.96 2.5 24.25 2.5C36.54 2.5 46.5 12.46 46.5 24.75ZM40.93 24.75C40.93 33.96 33.46 41.43 24.25 41.43C15.04 41.43 7.57 33.96 7.57 24.75C7.57 15.54 15.04 8.07 24.25 8.07C33.46 8.07 40.93 15.54 40.93 24.75ZM30.57 24.75C30.57 28.24 27.74 31.07 24.25 31.07C20.76 31.07 17.93 28.24 17.93 24.75C17.93 21.26 20.76 18.43 24.25 18.43C27.74 18.43 30.57 21.26 30.57 24.75Z"
+                    />
+                    <path
+                      class="shp222"
+                      d="M25.54 24.75C25.54 25.46 24.96 26.04 24.25 26.04C23.54 26.04 22.96 25.46 22.96 24.75C22.96 24.04 23.54 23.46 24.25 23.46C24.96 23.46 25.54 24.04 25.54 24.75Z"
+                    />
+                    <path
+                      class="shp333"
+                      d="M17.93 26.04L3.95 31.5M30.93 26.04L44.91 31.5M24.06 47L24.25 31.07M10.94 6.7L20.5 19.85M36.99 6.7L27.43 19.85"
+                    />
+                  </g>
+                </svg>
+                <p>Ссылка 3</p>
+              </li>
               <li id="iitab-4" class="cus-tabs-items">
-                  <svg id="itab-4" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 57" width="22" height="29">
-                    <defs>
-                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                        <path d="M0 0L44 0L44 57L0 57Z" />
-                      </clipPath>
-                    </defs>
-                    <style>
-                      tspan {
-                        white-space: pre
-                      }
-                  
-                      .a1 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 4
-                      }
-                  
-                      .b1 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 2
-                      }
-                    </style>
-                    <g>
-                      <path id="Path 1" class="a1"
-                        d="M11.22 49.43L11.22 55L41.89 55L41.89 21.28L27 10.39L11.22 10.5L11.22 22.46M25.51 9.85L11.22 9.92L11.22 2.05L25.51 1.98L25.51 9.85Z" />
-                      <path id="Path 2" class="b1" d="M16.29 1.92L16.29 8.92M20.21 1.98L20.21 8.98" />
-                      <path id="Path 3" class="a1"
-                        d="M11.59 20.3L3.48 33.22C-0.52 39.6 4.06 47.89 11.59 47.89C19.12 47.89 23.7 39.6 19.7 33.22L11.59 20.3Z" />
-                      <path id="Path 4" class="b1" d="M17.04 28.98L41.89 28.98M41.89 40.13L21.06 40.13" />
-                    </g>
-                  </svg>
-                  <p>Ссылка 4</p>
-                </li>
+                <svg
+                  id="itab-4"
+                  class="svg-img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 44 57"
+                  width="22"
+                  height="29"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L44 0L44 57L0 57Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .a1 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 4;
+                    }
+
+                    .b1 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 2;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="a1"
+                      d="M11.22 49.43L11.22 55L41.89 55L41.89 21.28L27 10.39L11.22 10.5L11.22 22.46M25.51 9.85L11.22 9.92L11.22 2.05L25.51 1.98L25.51 9.85Z"
+                    />
+                    <path
+                      class="b1"
+                      d="M16.29 1.92L16.29 8.92M20.21 1.98L20.21 8.98"
+                    />
+                    <path
+                      class="a1"
+                      d="M11.59 20.3L3.48 33.22C-0.52 39.6 4.06 47.89 11.59 47.89C19.12 47.89 23.7 39.6 19.7 33.22L11.59 20.3Z"
+                    />
+                    <path
+                      id="Path 4"
+                      class="b1"
+                      d="M17.04 28.98L41.89 28.98M41.89 40.13L21.06 40.13"
+                    />
+                  </g>
+                </svg>
+                <p>Ссылка 4</p>
+              </li>
               <li id="iitab-5" class="cus-tabs-items">
-                  <svg id="itab-5" class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 46" width="26" height="24">
-                    <defs>
-                      <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                        <path d="M0 0L51 0L51 46L0 46Z" />
-                      </clipPath>
-                    </defs>
-                    <style>
-                      tspan {
-                        white-space: pre
-                      }
-                  
-                      .c1 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 4
-                      }
-                  
-                      .c2 {
-                        fill: none;
-                        stroke: #a0a6ad;
-                        stroke-width: 2
-                      }
-                    </style>
-                    <g>
-                      <path id="Path 1" class="c1"
-                        d="M48.5 44L2 44L2 9.3L48.5 9.3L48.5 44ZM16.75 8.8L5.88 8.8L5.88 1.55L16.75 1.55L16.75 8.8ZM44.75 8.8L33.88 8.8L33.88 1.55L44.75 1.55L44.75 8.8Z" />
-                      <path id="Path 2" class="c2"
-                        d="M2 17.05L48.5 17.05M8.87 28.55L17.37 28.55M32.87 28.55L41.37 28.55M13.12 24.3L13.12 32.8" />
-                    </g>
-                  </svg>
-                  <p>Ссылка 5</p>
+                <svg
+                  id="itab-5"
+                  class="svg-img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 51 46"
+                  width="26"
+                  height="24"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L51 0L51 46L0 46Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .c1 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 4;
+                    }
+
+                    .c2 {
+                      fill: none;
+                      stroke: #a0a6ad;
+                      stroke-width: 2;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="c1"
+                      d="M48.5 44L2 44L2 9.3L48.5 9.3L48.5 44ZM16.75 8.8L5.88 8.8L5.88 1.55L16.75 1.55L16.75 8.8ZM44.75 8.8L33.88 8.8L33.88 1.55L44.75 1.55L44.75 8.8Z"
+                    />
+                    <path
+                      class="c2"
+                      d="M2 17.05L48.5 17.05M8.87 28.55L17.37 28.55M32.87 28.55L41.37 28.55M13.12 24.3L13.12 32.8"
+                    />
+                  </g>
+                </svg>
+                <p>Ссылка 5</p>
               </li>
             </ul>
             <div class="cus-btn-accent"></div>
@@ -446,108 +571,116 @@
               <!--filter select-1 start-->
               <div id="tab-1" class="tab-content active-tab-content">
                 <div class="cus-filter-option-wrapper">
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="cus-fitel-cost">
-                  <span>Цена</span>
-                  <div class="wrap-cost">
-                    <input type="number" class="min-cost valid" placeholder="0">
-                    <div class="cus-white-line1"></div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
                   </div>
-                  <div class="wrap-cost">
-                    <input type="number" class="max-cost valid" placeholder="250000">
-                    <div class="cus-white-line1"></div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
                   </div>
-                </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="cus-fitel-cost">
+                    <span>Цена</span>
+                    <div class="wrap-cost">
+                      <input
+                        type="number"
+                        class="min-cost valid"
+                        placeholder="0"
+                      />
+                      <div class="cus-white-line1"></div>
+                    </div>
+                    <div class="wrap-cost">
+                      <input
+                        type="number"
+                        class="max-cost valid"
+                        placeholder="250000"
+                      />
+                      <div class="cus-white-line1"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!--filter select-1 end-->
@@ -555,92 +688,100 @@
               <!--filter select-2 start-->
               <div id="tab-2" class="tab-content">
                 <div class="cus-filter-option-wrapper none">
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="custom-select">
-                  <select name="select-fil-1">
-                    <option value="0">Select</option>
-                    <option value="1">Select 1</option>
-                    <option value="2">Select 2</option>
-                    <option value="3">Select 3</option>
-                    <option value="4">Select 4</option>
-                    <option value="5">Select 5</option>
-                    <option value="6">Select 6</option>
-                    <option value="7">Select 7</option>
-                  </select>
-                  <div class="cus-white-line"></div>
-                </div>
-                <div class="cus-fitel-cost">
-                  <span>Цена</span>
-                  <div class="wrap-cost">
-                    <input type="number" class="min-cost valid" placeholder="0">
-                    <div class="cus-white-line1"></div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
                   </div>
-                  <div class="wrap-cost">
-                    <input type="number" class="max-cost valid" placeholder="250000">
-                    <div class="cus-white-line1"></div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
                   </div>
-                </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="custom-select">
+                    <select name="select-fil-1">
+                      <option value="0">Select</option>
+                      <option value="1">Select 1</option>
+                      <option value="2">Select 2</option>
+                      <option value="3">Select 3</option>
+                      <option value="4">Select 4</option>
+                      <option value="5">Select 5</option>
+                      <option value="6">Select 6</option>
+                      <option value="7">Select 7</option>
+                    </select>
+                    <div class="cus-white-line"></div>
+                  </div>
+                  <div class="cus-fitel-cost">
+                    <span>Цена</span>
+                    <div class="wrap-cost">
+                      <input
+                        type="number"
+                        class="min-cost valid"
+                        placeholder="0"
+                      />
+                      <div class="cus-white-line1"></div>
+                    </div>
+                    <div class="wrap-cost">
+                      <input
+                        type="number"
+                        class="max-cost valid"
+                        placeholder="250000"
+                      />
+                      <div class="cus-white-line1"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!--filter select-2 end-->
 
               <div class="cus-btn-wrapper">
                 <button type="reset" class="reset-filter-btn">
-                  <div class="esc-icon">
-                    <div class="esc-icon-left"></div>
-                    <div class="esc-icon-rithg"></div>
-                  </div>
+                  <span class="esc-icon">
+                    <span class="esc-icon-left"></span>
+                    <span class="esc-icon-rithg"></span>
+                  </span>
                   <span>Очистить фильтр</span>
                 </button>
                 <button type="submit" class="submit-filter-btn">
@@ -650,11 +791,10 @@
             </form>
           </div>
         </div>
-        
       </div>
     </div>
     <!--Customer end-->
-   
+
     <!--Goods card start-->
     <div class="goods-container main-wrapper">
       <div class="goods-name-wrapper">
@@ -687,7 +827,9 @@
               <i class="fas fa-star fill-color"></i>
               <i class="fas fa-star fill-color"></i>
               <i class="fas fa-star fill-color"></i>
-              <a href="#" class="card-review-link">Отзывы(<span class="review-quantity">10</span>)</a>
+              <a href="#" class="card-review-link"
+                >Отзывы(<span class="review-quantity">10</span>)</a
+              >
             </div>
             <div class="good-quantity">
               <span>В наличии:</span> <span class="goods-quantiy">24 шт.</span>
@@ -696,87 +838,110 @@
           <div class="goods-card-body">
             <div class="goods-type-wrapper">
               <ul class="type-wrap">
-                <li class="type-items"><img src="./assets/image/icon/season-stic.png" alt="season">
+                <li class="type-items">
+                  <img src="./assets/image/icon/season-stic.png" alt="season" />
                   <p>летняя</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/pass-car-ctic.png" alt="pass">
+                <li class="type-items">
+                  <img src="./assets/image/icon/pass-car-ctic.png" alt="pass" />
                   <p>легковая</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/new-stic.png" alt="new">
+                <li class="type-items">
+                  <img src="./assets/image/icon/new-stic.png" alt="new" />
                   <p>новая</p>
                 </li>
               </ul>
             </div>
-            <img src="./assets/image/Image/Tier_1.png" alt="goods_img">
+            <img src="./assets/image/Image/Tier_1.png" alt="goods_img" />
           </div>
           <div class="card-teg-wrapper">
             <ul class="card-teg-head">
-              <li class="teg-items"><img src="./assets/image/icon/new-banner.png" alt=""><p>новинка</p></li>
-              <li class="teg-items"><img src="./assets/image/icon/best-saler-baner.png" alt=""><p>хит</p></li>
-              <li class="teg-items"><img src="./assets/image/icon/sale-banner.png" alt=""><p>скидка</p></li>
+              <li class="teg-items">
+                <img src="./assets/image/icon/new-banner.png" alt="" />
+                <p>новинка</p>
+              </li>
+              <li class="teg-items">
+                <img src="./assets/image/icon/best-saler-baner.png" alt="" />
+                <p>хит</p>
+              </li>
+              <li class="teg-items">
+                <img src="./assets/image/icon/sale-banner.png" alt="" />
+                <p>скидка</p>
+              </li>
             </ul>
           </div>
           <div class="goods-card-price">
             <div class="card-price">599 грн.</div>
-            <div class="card-price-promo"> <span>1250 грн.</span></div>
+            <div class="card-price-promo"><span>1250 грн.</span></div>
           </div>
           <div class="btn-card-wrapper flex-center-center">
             <button type="button" class="buy-goods flex-center-center">
-              <div class="backet-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 69" width="28" height="24">
-                <defs>
-                  <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                    <path d="M0 0L81 0L81 69L0 69Z" />
-                  </clipPath>
-                </defs>
-                <style>
-                  tspan {
-                    white-space: pre
-                  }
-              
-                  .shp0 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-linecap: round;
-                    stroke-width: 6
-                  }
-              
-                  .shp1 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 6
-                  }
-              
-                  .shp2 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-width: 6
-                  }
-                </style>
-                <g>
-                  <path id="Path 1" class="shp0" d="M70.59 27.29L50 27.29" />
-                  <path id="Path 2" class="shp1" d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17" />
-                  <path id="Path 3" class="shp2"
-                    d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z" />
-                </g>
+              <span class="backet-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 81 69"
+                  width="28"
+                  height="24"
+                >
+                  <defs>
+                    <clipPath clipPathUnits="userSpaceOnUse">
+                      <path d="M0 0L81 0L81 69L0 69Z" />
+                    </clipPath>
+                  </defs>
+                  <style>
+                    tspan {
+                      white-space: pre;
+                    }
+
+                    .shp0 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-width: 6;
+                    }
+
+                    .shp1 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 6;
+                    }
+
+                    .shp2 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-width: 6;
+                    }
+                  </style>
+                  <g>
+                    <path class="shp0" d="M70.59 27.29L50 27.29" />
+                    <path
+                      class="shp1"
+                      d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17"
+                    />
+                    <path
+                      class="shp2"
+                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z"
+                    />
+                  </g>
                 </svg>
-              </div>
+              </span>
               <span>купить товар</span>
             </button>
           </div>
           <div class="goods-card-cust">
             <div class="goods-comper flex-center-center">
-              <img src="./assets/image/icon/Comper-good.png" alt="comper_img">
+              <img src="./assets/image/icon/Comper-good.png" alt="comper_img" />
               <span>Сравнить товар</span>
             </div>
             <div class="goods-favorit-add flex-center-center">
-              <img src="./assets/image/icon/favorit-good.png" alt="favorit_icon">
+              <img
+                src="./assets/image/icon/favorit-good.png"
+                alt="favorit_icon"
+              />
               <span>В избраное</span>
             </div>
-
-
           </div>
         </div>
         <div class="goods-card border-right-card">
@@ -794,7 +959,9 @@
               <i class="fas fa-star fill-color"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <a href="#" class="card-review-link">Отзывы(<span class="review-quantity">10</span>)</a>
+              <a href="#" class="card-review-link"
+                >Отзывы(<span class="review-quantity">10</span>)</a
+              >
             </div>
             <div class="good-quantity">
               <span>В наличии:</span> <span class="goods-quantiy">24 шт.</span>
@@ -803,87 +970,102 @@
           <div class="goods-card-body">
             <div class="goods-type-wrapper">
               <ul class="type-wrap">
-                <li class="type-items"><img src="./assets/image/icon/season-stic.png" alt="season">
+                <li class="type-items">
+                  <img src="./assets/image/icon/season-stic.png" alt="season" />
                   <p>летняя</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/new-stic.png" alt="new">
+                <li class="type-items">
+                  <img src="./assets/image/icon/new-stic.png" alt="new" />
                   <p>новая</p>
                 </li>
               </ul>
             </div>
-            <img src="./assets/image/Image/Tier_2.png" alt="goods_img">
+            <img src="./assets/image/Image/Tier_2.png" alt="goods_img" />
           </div>
           <div class="card-teg-wrapper">
             <ul class="card-teg-head">
-              <li class="teg-items"><img src="./assets/image/icon/new-banner.png" alt="">
+              <li class="teg-items">
+                <img src="./assets/image/icon/new-banner.png" alt="" />
                 <p>новинка</p>
               </li>
-              <li class="teg-items"><img src="./assets/image/icon/best-saler-baner.png" alt="">
+              <li class="teg-items">
+                <img src="./assets/image/icon/best-saler-baner.png" alt="" />
                 <p>хит</p>
               </li>
             </ul>
           </div>
           <div class="goods-card-price">
             <div class="card-price">599 грн.</div>
-            <div class="card-price-promo"> <span>1250 грн.</span></div>
+            <div class="card-price-promo"><span>1250 грн.</span></div>
           </div>
           <div class="btn-card-wrapper flex-center-center">
             <button type="button" class="buy-goods flex-center-center">
-              <div class="backet-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 69" width="28" height="24">
+              <span class="backet-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 81 69"
+                  width="28"
+                  height="24"
+                >
                   <defs>
-                    <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                    <clipPath clipPathUnits="userSpaceOnUse">
                       <path d="M0 0L81 0L81 69L0 69Z" />
                     </clipPath>
                   </defs>
                   <style>
                     tspan {
-                      white-space: pre
+                      white-space: pre;
                     }
-        
+
                     .shp0 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp1 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
                       stroke-linejoin: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp2 {
                       fill: none;
                       stroke: #fff;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
                   </style>
                   <g>
-                    <path id="Path 1" class="shp0" d="M70.59 27.29L50 27.29" />
-                    <path id="Path 2" class="shp1" d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17" />
-                    <path id="Path 3" class="shp2"
-                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z" />
+                    <path class="shp0" d="M70.59 27.29L50 27.29" />
+                    <path
+                      class="shp1"
+                      d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17"
+                    />
+                    <path
+                      class="shp2"
+                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z"
+                    />
                   </g>
                 </svg>
-              </div>
+              </span>
               <span>купить товар</span>
             </button>
           </div>
           <div class="goods-card-cust">
             <div class="goods-comper flex-center-center">
-              <img src="./assets/image/icon/Comper-good.png" alt="comper_img">
+              <img src="./assets/image/icon/Comper-good.png" alt="comper_img" />
               <span>Сравнить товар</span>
             </div>
             <div class="goods-favorit-add flex-center-center">
-              <img src="./assets/image/icon/favorit-good.png" alt="favorit_icon">
+              <img
+                src="./assets/image/icon/favorit-good.png"
+                alt="favorit_icon"
+              />
               <span>В избраное</span>
             </div>
-        
-        
           </div>
         </div>
         <div class="goods-card border-right-card">
@@ -910,28 +1092,30 @@
           <div class="goods-card-body">
             <div class="goods-type-wrapper">
               <ul class="type-wrap">
-                <li class="type-items"><img src="./assets/image/icon/season-stic.png" alt="season">
+                <li class="type-items">
+                  <img src="./assets/image/icon/season-stic.png" alt="season" />
                   <p>летняя</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/pass-car-ctic.png" alt="pass">
+                <li class="type-items">
+                  <img src="./assets/image/icon/pass-car-ctic.png" alt="pass" />
                   <p>легковая</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/new-stic.png" alt="new">
+                <li class="type-items">
+                  <img src="./assets/image/icon/new-stic.png" alt="new" />
                   <p>новая</p>
                 </li>
               </ul>
             </div>
-            <img src="./assets/image/Image/Tier_3.png" alt="goods_img">
+            <img src="./assets/image/Image/Tier_3.png" alt="goods_img" />
           </div>
           <div class="card-teg-wrapper">
             <ul class="card-teg-head">
-              <li class="teg-items"><img src="./assets/image/icon/new-banner.png" alt="">
+              <li class="teg-items">
+                <img src="./assets/image/icon/new-banner.png" alt="" />
                 <p>новинка</p>
               </li>
-              <li class="teg-items">
-              </li>
-              <li class="teg-items">
-              </li>
+              <li class="teg-items"></li>
+              <li class="teg-items"></li>
             </ul>
           </div>
           <div class="goods-card-price">
@@ -940,61 +1124,72 @@
           </div>
           <div class="btn-card-wrapper flex-center-center">
             <button type="button" class="buy-goods flex-center-center">
-              <div class="backet-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 69" width="28" height="24">
+              <span class="backet-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 81 69"
+                  width="28"
+                  height="24"
+                >
                   <defs>
-                    <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                    <clipPath clipPathUnits="userSpaceOnUse">
                       <path d="M0 0L81 0L81 69L0 69Z" />
                     </clipPath>
                   </defs>
                   <style>
                     tspan {
-                      white-space: pre
+                      white-space: pre;
                     }
-        
+
                     .shp0 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp1 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
                       stroke-linejoin: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp2 {
                       fill: none;
                       stroke: #fff;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
                   </style>
                   <g>
-                    <path id="Path 1" class="shp0" d="M70.59 27.29L50 27.29" />
-                    <path id="Path 2" class="shp1" d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17" />
-                    <path id="Path 3" class="shp2"
-                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z" />
+                    <path class="shp0" d="M70.59 27.29L50 27.29" />
+                    <path
+                      class="shp1"
+                      d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17"
+                    />
+                    <path
+                      class="shp2"
+                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z"
+                    />
                   </g>
                 </svg>
-              </div>
+              </span>
               <span>купить товар</span>
             </button>
           </div>
           <div class="goods-card-cust">
             <div class="goods-comper flex-center-center">
-              <img src="./assets/image/icon/Comper-good.png" alt="comper_img">
+              <img src="./assets/image/icon/Comper-good.png" alt="comper_img" />
               <span>Сравнить товар</span>
             </div>
             <div class="goods-favorit-add flex-center-center">
-              <img src="./assets/image/icon/favorit-good.png" alt="favorit_icon">
+              <img
+                src="./assets/image/icon/favorit-good.png"
+                alt="favorit_icon"
+              />
               <span>В избраное</span>
             </div>
-        
-        
           </div>
         </div>
         <div class="goods-card border-right-card">
@@ -1011,7 +1206,9 @@
               <i class="fas fa-star fill-color"></i>
               <i class="fas fa-star fill-color"></i>
               <i class="fas fa-star fill-color"></i>
-              <a href="#" class="card-review-link">Отзывы(<span class="review-quantity">10</span>)</a>
+              <a href="#" class="card-review-link"
+                >Отзывы(<span class="review-quantity">10</span>)</a
+              >
             </div>
             <div class="good-quantity">
               <span>В наличии:</span> <span class="goods-quantiy">24 шт.</span>
@@ -1020,20 +1217,20 @@
           <div class="goods-card-body">
             <div class="goods-type-wrapper">
               <ul class="type-wrap">
-                <li class="type-items"><img src="./assets/image/icon/season-stic.png" alt="season">
+                <li class="type-items">
+                  <img src="./assets/image/icon/season-stic.png" alt="season" />
                   <p>летняя</p>
                 </li>
-                <li class="type-items"><img src="./assets/image/icon/pass-car-ctic.png" alt="pass">
+                <li class="type-items">
+                  <img src="./assets/image/icon/pass-car-ctic.png" alt="pass" />
                   <p>легковая</p>
                 </li>
               </ul>
             </div>
-            <img src="./assets/image/Image/Tier_4.png" alt="goods_img">
+            <img src="./assets/image/Image/Tier_4.png" alt="goods_img" />
           </div>
           <div class="card-teg-wrapper">
-            <ul class="card-teg-head">
-            
-            </ul>
+            <ul class="card-teg-head"></ul>
           </div>
           <div class="goods-card-price">
             <div class="card-price">599 грн.</div>
@@ -1041,68 +1238,77 @@
           </div>
           <div class="btn-card-wrapper flex-center-center">
             <button type="button" class="buy-goods flex-center-center">
-              <div class="backet-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 69" width="28" height="24">
+              <span class="backet-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 81 69"
+                  width="28"
+                  height="24"
+                >
                   <defs>
-                    <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                    <clipPath clipPathUnits="userSpaceOnUse">
                       <path d="M0 0L81 0L81 69L0 69Z" />
                     </clipPath>
                   </defs>
                   <style>
                     tspan {
-                      white-space: pre
+                      white-space: pre;
                     }
-        
+
                     .shp0 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp1 {
                       fill: none;
                       stroke: #fff;
                       stroke-linecap: round;
                       stroke-linejoin: round;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
-        
+
                     .shp2 {
                       fill: none;
                       stroke: #fff;
-                      stroke-width: 6
+                      stroke-width: 6;
                     }
                   </style>
                   <g>
-                    <path id="Path 1" class="shp0" d="M70.59 27.29L50 27.29" />
-                    <path id="Path 2" class="shp1" d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17" />
-                    <path id="Path 3" class="shp2"
-                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z" />
+                    <path class="shp0" d="M70.59 27.29L50 27.29" />
+                    <path
+                      class="shp1"
+                      d="M3 2.57L17.33 2.57L36.33 40.71L67.67 40.71L77.67 13.17L41 13.17"
+                    />
+                    <path
+                      class="shp2"
+                      d="M47.17 58.92C47.17 62.83 44 66 40.08 66C36.17 66 33 62.83 33 58.92C33 55 36.17 51.83 40.08 51.83C44 51.83 47.17 55 47.17 58.92ZM73.17 58.92C73.17 62.83 70 66 66.08 66C62.17 66 59 62.83 59 58.92C59 55 62.17 51.83 66.08 51.83C70 51.83 73.17 55 73.17 58.92Z"
+                    />
                   </g>
                 </svg>
-              </div>
+              </span>
               <span>купить товар</span>
             </button>
           </div>
           <div class="goods-card-cust">
             <div class="goods-comper flex-center-center">
-              <img src="./assets/image/icon/Comper-good.png" alt="comper_img">
+              <img src="./assets/image/icon/Comper-good.png" alt="comper_img" />
               <span>Сравнить товар</span>
             </div>
             <div class="goods-favorit-add flex-center-center">
-              <img src="./assets/image/icon/favorit-good.png" alt="favorit_icon">
+              <img
+                src="./assets/image/icon/favorit-good.png"
+                alt="favorit_icon"
+              />
               <span>В избраное</span>
             </div>
-        
-        
           </div>
         </div>
       </div>
-
     </div>
     <!--Goods card end-->
-
 
     <!--Footer start-->
     <footer class="footer-wrapper">
@@ -1110,7 +1316,7 @@
         <ul class="wrapper-links">
           <li class="footer-sub">
             <div class="sub-head">
-              <h2>Блок 1</h5>
+              <h2>Блок 1</h2>
               <div class="line-holder flex-center-center">
                 <div class="line-accent-1"></div>
                 <div class="line-1"></div>
@@ -1120,8 +1326,17 @@
               <h4>Будьте в курсе новостей и новинок!</h4>
               <h3>Подписывайтесь на рассылку</h3>
               <form class="form-sub" onsubmit="return false">
-                <input type="text" class="sub-emil valid" placeholder="Укажите свой email для подписки">
-                <input id="btn-sub" type="submit" class="btn-submit" value="подписаться">
+                <input
+                  type="text"
+                  class="sub-emil valid"
+                  placeholder="Укажите свой email для подписки"
+                />
+                <input
+                  id="btn-sub"
+                  type="submit"
+                  class="btn-submit"
+                  value="подписаться"
+                />
               </form>
             </div>
           </li>
@@ -1185,21 +1400,21 @@
         </div>
         <div class="footer-social">
           <a href="https://www.vk.com" class="social-items">
-              <i class="fab fa-vk"></i>
+            <i class="fab fa-vk"></i>
           </a>
           <a href="https://www.facebook.com" class="social-items">
-              <i class="fab fa-facebook-f"></i>
-            </a>
+            <i class="fab fa-facebook-f"></i>
+          </a>
           <a href="https://www.twitter.com" class="social-items">
-              <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter"></i>
           </a>
           <a href="https://www.youtube.com" class="social-items">
-              <i class="fab fa-youtube"></i>
+            <i class="fab fa-youtube"></i>
           </a>
         </div>
         <div class="devop-info flex-center-center">
           <div class="wezom_logo">
-            <img src="./assets/image/icon/Wezom_logo.png" alt="wzom_logo">
+            <img src="./assets/image/icon/Wezom_logo.png" alt="wzom_logo" />
           </div>
           <div class="border-line"></div>
           <div class="devop-signatur">

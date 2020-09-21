@@ -82,7 +82,7 @@
   height: 15px;
   margin-left: 34px;
 }
-.button-profile > p {
+.button-profile > span {
   font-size: 12px;
   text-transform: uppercase;
   font-stretch: ultra-condensed;
