@@ -147,6 +147,10 @@
     top: -150px;
     right: -160px;
   }
+  .esc-icon-pop-call {
+    left: 300px;
+    top: -225px;
+  }
 }
 @media only screen and (max-width: 790px) {
   .wrapper-links {
@@ -169,11 +173,15 @@
     margin-top: 40px;
   }
   .esc-icon-pop {
-    top: -770px;
+    top: -750px;
     right: -160px;
   }
   .pop-border-line {
     display: none;
+  }
+  .esc-icon-pop-call {
+    left: 300px;
+    top: -235px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -252,10 +260,6 @@
   }
   .callback-pop-wrapper {
     left: 20%;
-  }
-  .esc-icon-pop-call {
-    left: 300px;
-    top: -235px;
   }
   .subs-done-wrapper {
     left: 20%;
