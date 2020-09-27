@@ -1,7 +1,6 @@
 window.addEventListener("DOMContentLoaded", init);
 function init() {
   var formSelect = document.querySelector(".form-filter"),
-    wraperSelect = formSelect.querySelector(".cus-filter-option-wrapper"),
     btnReset = formSelect.querySelector(".reset-filter-btn"),
     contSelect = formSelect.querySelectorAll(".select-selected"),
     selectValue = formSelect.querySelectorAll(".select-items > div"),

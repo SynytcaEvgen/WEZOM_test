@@ -1075,8 +1075,11 @@
   background-color: #fff;
   color: #3b3b3b;
   position: fixed;
-  left: 30%;
-  top: 30%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   padding: 10px 40px;
   z-index: 9999;
 }
@@ -1188,8 +1191,11 @@
   background-color: #fff;
   color: #3b3b3b;
   position: fixed;
-  left: 40%;
-  top: 30%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 9999;
 }
 .callback-input-wrapper {
@@ -1223,9 +1229,13 @@
   flex-direction: column;
   padding: 25px 10px;
   max-width: 380px;
+  max-height: 220px;
   position: fixed;
-  left: 40%;
-  top: 30%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 9999;
 }
 .subs-done-pop {
